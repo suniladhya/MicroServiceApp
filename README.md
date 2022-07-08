@@ -23,6 +23,14 @@ SSMS
 .NET 6
 Azure Subscription
 
+# Nuget Packages in the services(Web API Project)
+1. Auto mapper for mapping DTOS to Entity
+2. JWT Bearer for Authentication
+3. EFCore Tools and SQL for DB & migration
+4. Swashbuckle for Documentation
+
+For Microservices, there will be different API
+
 
 
 
