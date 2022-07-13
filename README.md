@@ -33,6 +33,7 @@ For Microservices, there will be different API and datbase setup has to be diffe
 
 In the current project we are using the EF Core. The details can be understood from the [link](https://medium.com/executeautomation/asp-net-core-6-0-minimal-api-with-entity-framework-core-69d0c13ba9ab).
 
+Installing SQL Server in Mac [doc](https://setapp.com/how-to/install-sql-server)
 
 
 
