@@ -29,7 +29,9 @@ Azure Subscription
 3. EFCore Tools and SQL for DB & migration
 4. Swashbuckle for Documentation
 
-For Microservices, there will be different API
+For Microservices, there will be different API and datbase setup has to be different for Each of the API.
+
+In the current project we are using the EF Core. The details can be understood from the [link](https://medium.com/executeautomation/asp-net-core-6-0-minimal-api-with-entity-framework-core-69d0c13ba9ab).
 
 
 
