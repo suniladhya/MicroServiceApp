@@ -33,7 +33,14 @@ For Microservices, there will be different API and datbase setup has to be diffe
 
 In the current project we are using the EF Core. The details can be understood from the [link](https://medium.com/executeautomation/asp-net-core-6-0-minimal-api-with-entity-framework-core-69d0c13ba9ab).
 
-Installing SQL Server in Mac [doc](https://setapp.com/how-to/install-sql-server)
+Installing SQL Server in Mac [doc](https://setapp.com/how-to/install-sql-server) /[create own sqlImage](https://www.sqlshack.com/creating-your-own-sql-server-docker-image/). Below steps are used to spin up the database.
+1. docker pull mcr.microsoft.com/mssql/server:2022-latest
+2. docker run --name sql3 -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=P@ssw0rd01' -e 'MSSQL_PID=Express' -p 1401:1433 -d mcr.microsoft.com/mssql/server
+3. Connect to database using : server - "localhost,1401" (localhost,externalPort)
+
+
+
+
 
 
 
