@@ -38,6 +38,27 @@ Installing SQL Server in Mac [doc](https://setapp.com/how-to/install-sql-server)
 2. docker run --name sql3 -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=P@ssw0rd01' -e 'MSSQL_PID=Express' -p 1401:1433 -d mcr.microsoft.com/mssql/server
 3. Connect to database using : server - "localhost,1401" (localhost,externalPort)
 
+In visual studio for mac, the package manager console doesn't exist. Hennce use dotnet CLI to for migrations.
+The connection string should be exactly as below:
+"ConnectionStrings": {
+    "DefaultConnection": "server=localhost,1401;Database=MangoProductAPI;User ID=SA;Password=P@ssw0rd01;MultipleActiveResultSets=true"
+ }
+ 
+ for Package manager console
+ 1. add migration AddProductModeToDb
+ 2. update database
+ 
+ For dotnet CLI, Open the terminal from the project location folder (eg. (base) sunilkumaradhya@Admins-MacBook-Pro-3 Mango.Services.ProductAPI % )
+ 1. dotnet tool install --global dotnet-ef (works)
+ 2. dotnet tool install --global dotnet-ef --version 3.1.4 (To install a specific version of the tool, use the following command)
+ 3. dotnet restore
+ 4. dotnet ef 
+ 5. dotnet ef migrations add initial
+ 6. dotnet ef database update
+
+
+ 
+
 
 
 
