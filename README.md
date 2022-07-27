@@ -56,10 +56,12 @@ The connection string should be exactly as below:
  5. dotnet ef migrations add initial
  6. dotnet ef database update
 
-
+Parameter Binding in WEB API [using [FromBody] and [FromUri]](https://stackoverflow.com/questions/24625303/why-do-we-have-to-specify-frombody-and-fromuri)
  
-
-
+## Future Scope:
+1. Add multiple Repository like SqlRepostory, InlineRepo, XML file Repo
+2. CQRS Pattern introduction
+3. breaking the dependency further([link](https://www.c-sharpcorner.com/UploadFile/3d39b4/crud-operations-using-the-generic-repository-pattern-and-dep/))
 
 
 
