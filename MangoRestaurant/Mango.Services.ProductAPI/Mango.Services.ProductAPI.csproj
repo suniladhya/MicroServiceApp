@@ -11,11 +11,14 @@
     <PackageReference Include="AutoMapper" Version="11.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.6" />
-    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.3.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.6">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.3.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.3.1" />
+    <PackageReference Include="NuGet.PackageManagement" Version="6.2.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,5 +27,24 @@
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Swashbuckle.AspNetCore.Swagger" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Swashbuckle.AspNetCore.SwaggerUI" />
+    <None Remove="Swashbuckle.AspNetCore.Annotations" />
+    <None Remove="DbContexts\" />
+    <None Remove="Models\" />
+    <None Remove="NuGet.PackageManagement" />
+    <None Remove="Repository\" />
+    <None Remove="Models\Dto\" />
+    <None Remove="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DbContexts\" />
+    <Folder Include="Models\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Models\Dto\" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\EmptyClass.cs" />
   </ItemGroup>
 </Project>

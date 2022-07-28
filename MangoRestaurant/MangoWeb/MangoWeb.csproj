@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="NuGet.PackageManagement" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.PackageManagement" Version="6.2.1" />
+  </ItemGroup>
 </Project>
